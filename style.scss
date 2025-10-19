@@ -35,7 +35,7 @@ main {
     @include flex-column(0rem);
     align-items: center;
 
-    section {
+    section.view1 {
         width: 100%;
         @include flex-column(1rem);
         padding: 1rem;
@@ -83,12 +83,153 @@ main {
         }
     }
 
+    section.view2{
+        @include flex-column(1rem);
+        width: 100%;
+        padding: 1rem;
+
+        .top,.bottom{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            .element{
+                text-align: center;
+                @include flex-column(0.2rem);
+
+                small{
+                    opacity: 0.6;
+                }
+                h2{
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    section.view3{
+        width: 100%;
+        @include flex-column(1rem);
+        padding: 1rem;
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+            }
+        }
+
+        .bottom {
+            background-color: #292929;
+            border-radius: 0.7rem;
+            padding: 1.5rem;
+            @include flex-column(3rem);
+
+            .text {
+                @include flex-column(0.7rem);
+
+                h1 {
+                    font-weight: 200;
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                    opacity: 0.6;
+                    line-height: 1.5;
+                }
+
+            }
+        }
+
+    }
+
+    section.view4{
+        width: 100%;
+        @include flex-column(1rem);
+        padding: 1rem;
+
+        .top {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+            }
+        }
+
+        .bottom {
+            background-color: #292929;
+            border-radius: 0.7rem;
+            padding: 1.5rem;
+            @include flex-column(3rem);
+
+            .text {
+                @include flex-column(0.7rem);
+
+                h1 {
+                    font-weight: 200;
+                    font-size: 2.5rem;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                    opacity: 0.6;
+                    line-height: 1.5;
+                }
+
+            }
+        }
+
+    }
+
+    section.view5{
+        background-color: #fff;
+            h1{
+                font-size: 3rem;
+                font-weight: 400;
+            }
+    }
+
+    section.view6{
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        padding: 1rem;
+
+
+        .card{
+            width: 100%;
+            border-radius: 0.7rem;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-500.webp);
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-position: center;
+            @include flex-column(0rem);
+            justify-content: space-between;
+            padding: 1rem;
+
+            // .top,.bottom{
+                
+            // }
+        }
+
+    }
 }
+
+
 
 @media (min-width:900px) {
     main {
 
-        section {
+        section.view1 {
             flex-direction: row;
             padding: 1rem 4rem;
 
@@ -116,5 +257,91 @@ main {
                 }
             }
         }
+
+        section.view2{
+            flex-direction: row;
+            padding: 1rem 4rem;
+        }
+
+        section.view3{
+            flex-direction: row-reverse;
+            padding: 1rem 4rem;
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+
+            .bottom {
+                justify-content: space-between;
+                padding: 3rem;
+
+                #p{
+                   text-transform: uppercase;
+                }
+
+                .text {
+
+                    gap: 1.5rem;
+
+                    h1 {
+                        font-size: 3.5rem;
+                        text-transform: uppercase;
+                    }
+
+                    .paragraph{
+                        display: flex;
+                        gap: 2rem;
+                        flex-direction: row;
+
+                        p{
+                        width: 60%;
+                        font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        section.view4{
+            flex-direction: row;
+            padding: 1rem 4rem;
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+
+            .bottom {
+                justify-content: space-between;
+                padding: 3rem;
+
+                #pra{
+                   text-transform: uppercase;
+                }
+
+                .text {
+
+                    gap: 1.5rem;
+
+                    h1 {
+                        font-size: 3.5rem;
+                        text-transform: uppercase;
+                    }
+
+                    .paragraph{
+                        display: flex;
+                        gap: 2rem;
+                        flex-direction: row;
+
+                        p{
+                        width: 60%;
+                        font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
