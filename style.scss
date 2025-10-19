@@ -99,9 +99,10 @@ main {
 
                 small{
                     opacity: 0.6;
+                    font-size: 2rem;
                 }
                 h2{
-                    font-size: 2rem;
+                    font-size: 4rem;
                     font-weight: 300;
                 }
             }
@@ -191,21 +192,20 @@ main {
     }
 
     section.view5{
-        background-color: #fff;
             h1{
                 font-size: 3rem;
                 font-weight: 400;
+                display: flex;
             }
     }
 
     section.view6{
-        display: flex;
-        gap: 2rem;
+        @include flex-column(2rem);
         width: 100%;
         padding: 1rem;
 
 
-        .card{
+        .card1{
             width: 100%;
             border-radius: 0.7rem;
             background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-500.webp);
@@ -216,9 +216,116 @@ main {
             justify-content: space-between;
             padding: 1rem;
 
-            // .top,.bottom{
-                
-            // }
+            .icon,.bottom{
+                background-color: rgba(170, 170, 170, 0.375);
+                backdrop-filter: blur(5px);
+                border: 1px solid white;
+                border-radius: 0.7rem;
+                padding: 0.5rem;
+
+            }
+            .top{
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-end;
+            }
+            .icon{
+                width: fit-content;
+                border-radius: 50%;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem 1rem;
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+            }
+
+        }
+
+         .card2{
+            width: 100%;
+            border-radius: 0.7rem;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03-p-500.webp);
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-position: center;
+            @include flex-column(0rem);
+            justify-content: space-between;
+            padding: 1rem;
+
+            .icon,.bottom{
+                background-color: rgba(170, 170, 170, 0.375);
+                backdrop-filter: blur(5px);
+                border: 1px solid white;
+                border-radius: 0.7rem;
+                padding: 0.5rem;
+
+            }
+            .top{
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-end;
+            }
+            .icon{
+                width: fit-content;
+                border-radius: 50%;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem 1rem;
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+            }
+
+        }
+
+         .card3{
+            width: 100%;
+            border-radius: 0.7rem;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-500.webp);
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-position: center;
+            @include flex-column(0rem);
+            justify-content: space-between;
+            padding: 1rem;
+
+            .icon,.bottom{
+                background-color: rgba(170, 170, 170, 0.375);
+                backdrop-filter: blur(5px);
+                border: 1px solid white;
+                border-radius: 0.7rem;
+                padding: 0.5rem;
+
+            }
+            .top{
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-end;
+            }
+            .icon{
+                width: fit-content;
+                border-radius: 50%;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem 1rem;
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+            }
+
         }
 
     }
@@ -342,6 +449,5 @@ main {
                 }
             }
         }
-
     }
 }
