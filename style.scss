@@ -99,10 +99,10 @@ main {
 
                 small{
                     opacity: 0.6;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
                 h2{
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                     font-weight: 300;
                 }
             }
@@ -240,7 +240,7 @@ main {
 
                 p{
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -281,7 +281,7 @@ main {
 
                 p{
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -322,7 +322,7 @@ main {
 
                 p{
                     text-transform: uppercase;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
             }
 
@@ -363,6 +363,48 @@ main {
                     font-weight: 200;
                     font-size: 2.5rem;
                     text-transform: uppercase;
+                }
+            }
+
+        }
+    }
+
+    section.view8{
+        width: 100%;
+        background-color: rgb(228, 228, 88);
+        @include flex-column(1rem);
+        padding: 1rem;
+
+        .box{
+            border-radius: 0.7rem;
+            padding: 1.5rem;
+
+            p{
+                color: black;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .textarea {
+                @include flex-column(0.7rem);
+
+                h1 {
+                    color: black;
+                    font-weight: 400;
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    word-spacing: 2px;
+                }
+
+                button {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    background-color: black;
+                    color: white;
+                    font-weight: 500;
+                    padding: 0.7rem 1rem;
+                    border-radius: 0.5rem;
                 }
             }
 
@@ -492,6 +534,18 @@ main {
         section.view6{
             display: flex;
             flex-direction: row;
+            .card1{
+                width: 30%;
+                aspect-ratio: 1/1.2;
+            }
+            .card2{
+                width: 30%;
+                aspect-ratio: 1/1.2;
+            }
+            .card3{
+                width: 30%;
+                aspect-ratio: 1/1.2;
+            }
         }
 
         section.view7 {
@@ -521,5 +575,36 @@ main {
                 }
             }
         }
+
+         section.view8 {
+            flex-direction: row;
+            padding: 1rem 4rem;
+
+            .top,
+            .bottom {
+                width: 50%;
+            }
+
+            .box{
+                justify-content: space-between;
+                padding: 3rem;
+                    p{
+                        font-size: 1.5rem;
+                    }
+
+                .textarea {
+
+                    gap: 1.5rem;
+
+                    h1 {
+                        font-size: 4rem;
+                    }
+                    button{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+        
     }
 }
